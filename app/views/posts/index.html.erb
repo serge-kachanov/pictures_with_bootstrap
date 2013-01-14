@@ -1,0 +1,14 @@
+
+<%= render 'form' %>
+
+<% @posts.each do |post| %>
+  
+    <p><%=  link_to post do  %>
+    <%=  image_tag post.pic.url (:small) %>
+    <% end %> </p>
+    
+    <p><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+
+<% end %>
+
+<br />

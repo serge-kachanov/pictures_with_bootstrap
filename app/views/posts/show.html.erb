@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<div align="center">
+  <%=  link_to posts_path do  %>
+    <%=  image_tag @post.pic.url %>
+  <% end %>
+</div>
+
+<%= link_to 'Back', posts_path %>
